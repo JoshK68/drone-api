@@ -132,7 +132,7 @@ def authorize():
         )
 
         db.session.add(user)
-        db.sesion.commit()
+        db.session.commit()
         session.permanent = True
         login_user(user)
         return redirect(url_for('home'))
